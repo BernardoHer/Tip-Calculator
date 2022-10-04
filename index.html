@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/media/favicon-32x32.png">
+        <link href="/style/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+        <script src="/js/app.js" ></script>
+        <title>Splitter</title>
+    </head>
+  <body>
+    <div>
+      <img src="/media/logo.svg" alt="Logo" class="logo" />
+      <div class="card">
+        <div class="card-first">
+          <div class="bill-input-section">
+            <label for="bill-input">Bill</label>
+            <div class="input-image-container">
+              <input id="billTotalInput" type="text" value="142.55" />
+              <img src="/media/icon-dollar.svg" alt="dollar-sign" />
+            </div>
+          </div>
+          <div class="select-tip-section">
+            <p class="select-tip-title">Select Tip %</p>
+            <div class="select-tip">
+              <div class="select-tip-percentage" >5%</div>
+              <div class="select-tip-percentage" >10%</div>
+              <div class="select-tip-percentage" >15%</div>
+              <div class="select-tip-percentage" >25%</div>
+              <div class="select-tip-percentage" >50%</div>
+              <div class="select-tip-percentage select-tip-custom">
+                <input id="custom-tip" class="custom-tip-input" type="text" placeholder="Custom"/>
+              </div>
+            </div>
+          </div>
+          <div class="number-people">
+            <label for="number-people-input" class="title">Number of People</label>
+            <div class="input-image-container">
+              <input id="numberOfPeople" type="text" value="5"/>
+              <img src="/media/icon-person.svg" alt="person-sign"/>
+            </div>
+          </div>
+        </div>
+        <div class="card-second">
+          <div class="tip-amount footer-section">
+            <div class="tip-amount text">
+              <p class="title">Tip Amount</p>
+              <p class="sub-title">/ person</p>
+            </div>
+            <div class="tip-amount-value value">$4.27</div>
+          </div>
+          <div class="total footer-section">
+            <div class="total text">
+              <p class="title">Total</p>
+              <p class="sub-title">/ person</p>
+            </div>
+            <div id='perPersonTotal' class="total-value value">$32.79</div>
+          </div>
+
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
